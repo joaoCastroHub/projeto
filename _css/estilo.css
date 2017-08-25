@@ -2,16 +2,11 @@
 
 div.menu {
 	position: relative;
-	top: 0;
 }
 
 div.submenu{
 	display: none;
 	position: absolute;
-}
-
-div.menu li:hover {
-	background-color: #f2f2f2;
 }
 
 div.menu li{
@@ -32,6 +27,10 @@ div.menu li.right{
 	right: 50px;
 }
 
+div.menu li.hover-white:hover {
+	background-color: #f2f2f2;
+}
+
 div.menu li.right a:hover {
 	color: #ffa500;
 }
@@ -42,14 +41,23 @@ div.menu li.right-bord{
 	border-radius: 10px;
 }
 
+div.menu li.right-bord:hover {
+	background-color: #f2f2f2;
+}
+
+img.logo{
+	z-index: 5;
+	height: 50px;
+	width: 135px;
+	left:10px;
+}
+
 img.back{
 	position: absolute;
 	z-index: -1;
-	background-color: blue;
 	top: -200px;
 	left: calc(50% - 800px);
-	opacity: 0.65;
+	opacity: 0.5;
 	height: 962px;
 	width: 1710px;
 }
-
