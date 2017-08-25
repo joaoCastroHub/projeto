@@ -1,5 +1,16 @@
 @charset "UTF-8"
 
-nav.menu ul {
-	list-style: none;
+div.menu {
+	position: relative;
+	top: 0;
+}
+
+div.submenu{
+	display: none;
+	position: absolute;
+}
+
+div.menu:hover div.submenu{
+	display: block;
+	position: relative;
 }
