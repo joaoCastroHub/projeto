@@ -9,11 +9,19 @@ div.submenu{
 	position: absolute;
 }
 
+div.menu:hover div.submenu{
+	display: block;
+	position: relative;
+}
+
+div.menu li:hover {
+	background-color: #f2f2f2;
+}
+
 div.menu li{
 	display: inline-block;
 	margin-top: 0px;
 	padding: 15px;
-
 }
 
 div.menu li a{
