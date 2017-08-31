@@ -2,7 +2,7 @@
 
 nav.menu{
 	height: 80px;
-	width: 100%;
+	width: 1200px;
 }
 
 div.submenu{
@@ -45,10 +45,6 @@ nav.menu div.left{
 	margin-left: 150px;
 }
 
-nav.menu li.hover-white.sales{
-
-}
-
 nav.menu li.hover-white:hover {
 	background-color: #e5e5e4;
 }
@@ -77,25 +73,9 @@ img.logo{
 	left: 67px;
 }
 
-div.center{
-	width: 450px;
-	position: relative;
-	margin: 0 auto;
-	top: 280px;
-	text-align: center;
-	text-shadow: 0 1px 5px 	black;
-	color: #fff;
-	font-family: "Roboto Slab";
-}
-
-div.center a{
-	text-decoration: none;
-	color: #fff;
-	font-family: sans-serif;
-}
-
 div.back-photo{
 	top: 0;
+	left: 0;
 	position: fixed;
 	height: auto;
 	width: auto;
@@ -114,4 +94,71 @@ img.back{
     top: -200px;
 	height: 962px;
 	width: 1710px;
+}
+
+div.center{
+	width: 450px;
+	position: relative;
+	margin: 0 auto;
+	top: 280px;
+	text-align: center;
+	text-shadow: 0 1px 5px 	black;
+	color: #fff;
+	font-family: "Roboto Slab";
+}
+
+div.center a{
+	text-decoration: none;
+	color: #fff;
+}
+
+/*------------------------------MEDIAS ISCRINS------------------------------*/
+@media only screen and (min-width: 401px){
+	div.mobile{
+		display: none; 
+	}
+
+	div.desktop{
+		display: static;
+	}
+
+	div.center{
+		font-size: 18px;
+	}
+}
+
+@media only screen and (max-width: 400px){
+
+	div.center{
+		position: absolute;
+		top: 400px;
+		font-size: 12px;
+		margin: 0px;
+		width: 350px;
+	}
+}
+
+@media only screen and (max-width: 1000px){
+	div.desktop{
+		display: none;
+	}
+
+	img.logo{
+		position: static;
+		margin-left: 0;
+	}
+
+	div.center{
+		width: 350px;
+		font-size: 16px;
+	}
+}
+
+@media only screen and (max-width: 750px){
+
+	div.center{
+		width: 350px;
+		font-size: 12px;
+		top: 380px;
+	}
 }
