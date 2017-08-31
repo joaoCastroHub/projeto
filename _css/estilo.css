@@ -2,7 +2,7 @@
 
 nav.menu{
 	height: 80px;
-	max-width: 100%;
+	width: 100%;
 }
 
 div.submenu{
@@ -34,6 +34,7 @@ nav.menu li a{
 	font-family: sans-serif;
 	font-size: 14px;
 	line-height: 18px;
+	height: 80px;
 }
 
 nav.menu li.right{
@@ -44,8 +45,12 @@ nav.menu div.left{
 	margin-left: 150px;
 }
 
+nav.menu li.hover-white.sales{
+
+}
+
 nav.menu li.hover-white:hover {
-	background-color: #f2f2f2;
+	background-color: #e5e5e4;
 }
 
 nav.menu li.right-bord:hover {
@@ -72,14 +77,6 @@ img.logo{
 	left: 67px;
 }
 
-img.back{
-	position: absolute;
-	z-index: -1;
-	opacity: 0.5;
-	max-width: 100%;
-	max-height: 100%;
-}
-
 div.center{
 	width: 450px;
 	position: relative;
@@ -98,13 +95,23 @@ div.center a{
 }
 
 div.back-photo{
-	position: absolute;
 	top: 0;
-	left: 0;
-	height: 665px;
-	width: 1710px;
-	max-width: 100%;
+	position: fixed;
+	height: auto;
+	width: auto;
+	min-width: 100%;
+	min-height: 100%;
 	background: linear-gradient(to bottom left,#77c4e3,#8176b5);
 	opacity: 1;
 	z-index: -2;
+}
+
+img.back{
+	position: fixed;
+	z-index: -1;
+	opacity: 0.5;
+	left: calc(50% - 800px);
+    top: -200px;
+	height: 962px;
+	width: 1710px;
 }
