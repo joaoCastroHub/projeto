@@ -4,7 +4,6 @@
 nav.menu{
 	height: 80px;
 	width: 1200px;
-	position: 0px;
 }
 
 /*-----------NAO DEVE APARECER NO MOMENTO--------------*/
@@ -58,6 +57,18 @@ div.desktop{
 	height: 80px;
 	width: 100%;
 }
+
+div.iconpro{
+	float: right;
+	margin-left: 5px;
+}
+
+div.iconmobile{
+	display: none;
+	float: right;
+	height: 65px;
+	width: 70px;
+}
 /*--------------------------------------MENU----------------------------------------*/
 
 
@@ -65,7 +76,6 @@ div.desktop{
 /*-------------------------HOVER DO MENU-------------------------------*/
 nav.menu li.hover-white:hover {
 	background-color: rgba(255,255,255,.3);
-
 }
 
 nav.menu li.right-bord:hover {
@@ -74,6 +84,11 @@ nav.menu li.right-bord:hover {
 
 nav.menu li.right a:hover {
 	color: #ffa500;
+}
+
+div.iconmobile:hover{
+	cursor: pointer;
+	background-color: rgba(255,255,255,.3);
 }
 /*-------------------------HOVER DO MENU-------------------------------*/
 
@@ -137,9 +152,6 @@ div.center a{
 
 /*--------------------------CENTRO--------------------------*/
 
-@media only screen and(min-width: 1000px){
-
-}
 
 /*------------------------------MEDIAS queris------------------------------*/
 @media only screen and (min-width: 401px){
@@ -158,8 +170,18 @@ div.center a{
 	}
 
 	img.logo{
-		position: static;
-		margin-left: 0;
+		position: absolute;
+		margin-left: -50px;
+		margin-top: 0;
+	}
+
+	div.iconmobile{
+		display: inline-block;
+	    position: relative;
+    	top: -40px;
+    	margin-right: 24px;
+    	margin-top: 15px;
+    	padding-top: 20px;
 	}
 
 	div.center{
@@ -178,6 +200,16 @@ div.center a{
 		top: 380px;
 		margin: 0 auto;
 	}
+
+	div.iconmobile{
+		padding-top: 25px;
+	}
+
+	img.logo{
+		position: absolute;
+		margin-left: -50px;
+		margin-top: 5px;
+	}
 }
 
 @media only screen and (max-width: 400px){
@@ -188,5 +220,22 @@ div.center a{
 		font-size: 12px;
 		width: 300px;
 		max-width: 300px;
+	}
+
+	div.iconmobile{
+		padding-top: 33px;
+	}
+
+	img.logo{
+		position: absolute;
+		margin-left: -50px;
+		margin-top: 13px;
+	}
+}
+
+@media only screen and (max-width: 1200px){
+
+	nav.menu li.hover-white_x{
+		display: none;
 	}
 }
