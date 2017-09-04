@@ -78,6 +78,10 @@ nav.menu li.hover-white:hover {
 	background-color: rgba(255,255,255,.3);
 }
 
+nav.menu li.hover-white_x:hover {
+	background-color: rgba(255,255,255,.3);
+}
+
 nav.menu li.right-bord:hover {
 	background-color: rgba(255,255,255,.3);
 }
@@ -123,6 +127,8 @@ img.back{
 	height: 962px;
 	width: 1710px;
 }
+
+
 /*-----------------------------IMAGENS---------------------------------*/
 
 
