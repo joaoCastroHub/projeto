@@ -1,2 +1,3 @@
 # projeto
-Projeto de oficina de integração
+Projeto App organizador de tarefas
+
